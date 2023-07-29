@@ -66,6 +66,10 @@ const SingleVideoPage = () => {
     });
   };
 
+  const pageNavHandler = (videoId, categoryId) => {
+    navigate(`/category/${categoryId}/${videoId}`);
+  };
+
   return videoListData ? (
     <article className="singlePage_container">
       <div className="singlePage-partOne">
@@ -147,7 +151,10 @@ const SingleVideoPage = () => {
         <ul>
           {moreVideoListDB.length > 0 &&
             moreVideoListDB.map((item) => (
-              <li key={item._id}>
+              <li
+                key={item._id}
+                onClick={() => pageNavHandler(item._id, item.category)}
+              >
                 <div>
                   <img
                     src={item.thumbnail}
