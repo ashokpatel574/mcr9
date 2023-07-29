@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from "@mui/icons-material/Explore";
@@ -6,11 +6,15 @@ import WatchLaterIcon from "@mui/icons-material/WatchLater";
 import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 
 const SideNavBar = () => {
+ 
+  function NavLinkStyle({ isActive }) {
+    return { color: isActive && "blue" };
+  }
   return (
     <aside className="sideNav_container">
       <ul className="sideNav_list flex-column">
         <li className="sideNav_listItem">
-          <NavLink to="/">
+          <NavLink to="/" style={NavLinkStyle}>
             <span>
               <HomeIcon />
             </span>
@@ -18,7 +22,7 @@ const SideNavBar = () => {
           </NavLink>
         </li>
         <li className="sideNav_listItem">
-          <NavLink to="explore">
+          <NavLink to="explore" style={NavLinkStyle}>
             <span>
               <ExploreIcon />
             </span>
@@ -26,7 +30,7 @@ const SideNavBar = () => {
           </NavLink>
         </li>
         <li className="sideNav_listItem">
-          <NavLink to="playlist">
+          <NavLink to="playlist" style={NavLinkStyle}>
             <span>
               <PlaylistAddIcon />
             </span>
@@ -34,7 +38,7 @@ const SideNavBar = () => {
           </NavLink>
         </li>
         <li className="sideNav_listItem">
-          <NavLink to="watchlater">
+          <NavLink to="watchlater" style={NavLinkStyle}>
             <span>
               <WatchLaterIcon />
             </span>
