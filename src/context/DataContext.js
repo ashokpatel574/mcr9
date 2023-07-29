@@ -5,6 +5,13 @@ const DataContext = createContext();
 const DataContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(DataReducer, initialState);
 
+  localStorage.setItem("videoLibraryDB", JSON.stringify(state.videoLibraryDB));
+  localStorage.setItem("userData", JSON.stringify(state.userData));
+
+  useEffect(() => {
+    dispatch({ type: "CloseModal" });
+  }, []);
+
   return (
     <DataContext.Provider
       value={{

@@ -130,7 +130,7 @@ const SingleVideoPage = () => {
                   </span>
                   <span
                     onClick={() =>
-                      deleteNoteHandler(commentItem?._id, videoListData)
+                      deleteNoteHandler(commentItem?._id, videoListData._id)
                     }
                   >
                     <DeleteIcon />

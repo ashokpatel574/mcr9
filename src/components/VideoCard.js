@@ -29,8 +29,6 @@ const VideoCard = ({ videoItem }) => {
         });
   };
 
-  console.log(userData.wishlistData);
-
   return (
     <li>
       <div className="part-one">
