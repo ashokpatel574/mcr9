@@ -145,6 +145,7 @@ export const DataReducer = (state, action) => {
         ...state,
         isNoteModalOpen: true,
         videoNotes: action.payload,
+        editNotes: false,
       };
     }
 
