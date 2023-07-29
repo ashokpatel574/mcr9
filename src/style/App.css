@@ -1,0 +1,445 @@
+.main {
+  max-width: 145rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.title {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.videoLibrary_container {
+  max-width: 145rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1.5fr 8.5fr;
+  grid-template-areas: "sideNav main";
+  gap: 2.5rem;
+}
+
+.sideNav_container {
+  grid-area: sideNav;
+  width: 100%;
+  height: fit-content;
+  gap: 2rem;
+}
+
+.sideNav_list {
+  gap: 1.5rem;
+}
+
+.sideNav_listItem a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sideNav_listItem span svg {
+  font-size: 2.6rem;
+}
+
+.home_container {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home_container-title {
+  font-size: 2.4rem;
+}
+
+.categoryLists,
+.videoLists {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.categoryLists li,
+.videoLists li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  max-width: 25rem;
+}
+
+.categoryLists li div {
+  max-width: 25rem;
+  height: 15rem;
+  width: 100%;
+}
+
+.categoryLists li p {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.videoLists li .part-one {
+  position: relative;
+  max-width: 25rem;
+  height: 15rem;
+  width: 100%;
+}
+
+.addedWishList,
+.notaddedWishList {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 0.25rem;
+}
+
+.addedWishList svg {
+  font-size: 2.6rem;
+  color: blue;
+}
+
+.notaddedWishList svg {
+  font-size: 2.6rem;
+  color: grey;
+}
+
+.videoLists li .part-two {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.videoLists li .part-two div:first-child {
+  max-width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.videoLists li .part-two div:first-child img {
+  border-radius: 50%;
+}
+
+.videoList_part-two-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video_categy,
+.video_title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.videoList_part-two-info p:last-child {
+  font-size: 1.4rem;
+}
+
+.singlePage_container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.singlePage-partOne {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.singlePage-partOne iframe {
+  width: 100%;
+}
+
+.partOne-info-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1.5px solid #ccc;
+}
+
+.partOne-info-header div:first-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partOne-info-header div:first-child p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.partOne-info-header-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partOne-info-header-icons svg {
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.addedWishList-icon svg {
+  color: blue;
+}
+
+.notaddedWishList-icon svg {
+  color: grey;
+}
+
+.partOne-notes-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.partOne-notes-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.commentsListItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commentsListItem span {
+  font-size: 1.6rem;
+}
+
+.commets-icon {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.commets-icon svg {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.singlePage-partTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.singlePage-partTwo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.singlePage-partTwo ul li {
+  display: flex;
+  gap: 1rem;
+}
+
+.singlePage-partTwo ul li div:first-child {
+  display: flex;
+  max-width: 20rem;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.singlePage-partTwo ul li div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.singlePage-partTwo ul li div:last-child p {
+  font-size: 1.3rem;
+  color: blue;
+}
+
+.singlePage-partTwo ul li div:last-child p:first-child {
+  font-weight: bold;
+}
+
+.explorePage_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.explorePage-partOne {
+  width: 100%;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.explorePage-partOne label,
+.explorePage-partOne input {
+  width: 100%;
+}
+
+.explorePage-partOne input {
+  padding: 0.8rem 2rem;
+  border: 1.5px solid #ccc;
+  border-radius: 0.6rem;
+  font-size: 1.8rem;
+}
+
+.playListPage_playLists {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.playListPage_playLists li {
+  max-width: 25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.playListPage_playLists li div:first-child {
+  max-width: 25rem;
+  width: 100%;
+  position: relative;
+}
+
+.playList_delete-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.playList_delete-icon svg {
+  font-size: 2.2rem;
+}
+
+.playList_delete-icon svg:hover {
+  color: red;
+}
+
+.playListPage_playLists li div:last-child {
+  font-size: 1.6rem;
+}
+
+.playListPage_playLists li div:last-child p:first-child {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.addnewPlaylist {
+  padding: 6rem 6rem;
+  cursor: pointer;
+}
+
+.addnewPlaylist span svg {
+  font-size: 2.8rem;
+}
+
+.addnewPlaylist span svg:hover {
+  color: blue;
+}
+
+.playlistItem_container {
+  position: relative;
+}
+
+.removeplayListItem {
+  position: absolute;
+  z-index: 10;
+  top: 0.25rem;
+  left: 0.25rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.removeplayListItem svg {
+  font-size: 2.4rem;
+}
+
+.removeplayListItem svg:hover {
+  color: red;
+}
+
+.playlistModal .title {
+  padding: 0.5rem;
+}
+
+.playlistModal form {
+  width: 100%;
+}
+
+.playlistModal form input {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.playlistModal form .submitBtn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1.8rem;
+}
+
+addplaylistModal {
+  padding: 1rem;
+}
+
+.addplaylistModal .modal_container-header .title {
+  padding: 0rem;
+}
+
+.addNewPlayListBtn {
+  width: 100%;
+}
+
+.addNewPlayListBtn button {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+}
+
+.exisiting_playList_container,
+.exisiting_playList_container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.exisiting_playList_container ul li {
+  cursor: pointer;
+}
